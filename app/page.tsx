@@ -1370,6 +1370,17 @@ export default function GalopeLibertador() {
           </Card>
         </div>
       )}
+      <footer className="w-full text-center py-6 text-sm text-gray-700 bg-white/70 backdrop-blur-md mt-12 border-t border-gray-300">
+        <div className="space-y-1">
+          <p>© 2025 HeroX. A fun cowboy runner on XlayerChain — play, score, and get rewarded.</p>
+          <p>
+            Contact us:{" "}
+            <a href="mailto:contact@herox.fun" className="text-blue-600 hover:underline">
+              contact@herox.fun
+            </a>
+          </p>
+        </div>
+      </footer>
     </div>
   )
 }
