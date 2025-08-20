@@ -99,12 +99,14 @@
   }
 }
 
+/* 打字效果和光标闪烁 */
 .animate-typewriter {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 4px solid orange; /* 模拟光标 */
-  animation: typewriter 4s steps(5) infinite, blink 0.75s step-end infinite;
+  width: 0;
+  border-right: 4px solid orange; /* 模拟打字光标 */
+  animation: typewriter 3s steps(5) infinite, blink 0.75s step-end infinite;
 }
 
 /* 光标闪烁效果 */
@@ -119,3 +121,4 @@
     border-color: orange;
   }
 }
+
