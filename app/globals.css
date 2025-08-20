@@ -99,26 +99,34 @@
   }
 }
 
-/* 打字效果和光标闪烁 */
-.animate-typewriter {
+/* 设置字体样式 */
+.typing-effect {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #f97316; /* Orange-700 color */
   display: inline-block;
-  overflow: hidden;
   white-space: nowrap;
+  overflow: hidden;
   width: 0;
-  border-right: 4px solid orange; /* 模拟打字光标 */
-  animation: typewriter 3s steps(5) infinite, blink 0.75s step-end infinite;
+  border-right: 3px solid #f97316; /* 光标效果 */
+  animation: typing 2s steps(5) 1s forwards, blink 0.75s step-end infinite;
+}
+
+/* 逐字打字效果 */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; /* 最终宽度等于文本宽度 */
+  }
 }
 
 /* 光标闪烁效果 */
 @keyframes blink {
-  0%,
-  50%,
-  100% {
+  50% {
     border-color: transparent;
-  }
-  25%,
-  75% {
-    border-color: orange;
   }
 }
 
