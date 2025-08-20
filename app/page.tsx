@@ -655,6 +655,7 @@ export default function GalopeLibertador() {
                 className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-contain"
               />
             </div>
+            <h1 className="text-4xl font-bold text-center text-orange-700 mt-4">HeroX</h1>
 
             {/* Hero Section */}
             <div className="relative">
